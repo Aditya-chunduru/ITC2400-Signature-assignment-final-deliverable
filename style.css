@@ -1,0 +1,272 @@
+
+
+
+.banner {
+    background-color: #f0f0f0;
+    background-image: url(Images/Logo.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fffdfd;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    50% {color: blue;}
+  
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.large-btn {
+    display: flex;
+    justify-content: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    gap: 10px;
+}
+
+.large-btn:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s; 
+    cursor: pointer;
+}
+.btn:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.btn:visited {
+    color: white;
+}
+
+
+.roadmap-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    color: white;
+}
+
+.roadmap-item {
+    background-color: #0464e0;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+}
+
+.roadmap-item a {
+    color: yellow;
+}
+.trophy-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+
+.trophy-item {
+    background-color: #0464e0;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    color: white;
+}
+
+.trophy-item a {
+    color: yellow;
+}
+
+.dlc-trophy-guide {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    
+}
+.dlc-trophy-item {
+    background-color: #0464e0;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    color: white;
+}
+
+.dlc-trophy-item a {
+    color: yellow;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .roadmap-item, .trophy-item, .dlc-trophy-item {
+        min-width: 100%;
+        margin-bottom: 1em;
+    }
+
+
+    .roadmap-list, .trophy-list, .dlc-trophy-guide {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav, .large-btn {
+        flex-direction: column;
+    }
+}
+
+.mission {
+    background-color: #0464e0;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.services {
+    background-color: #0464e0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    
+}
+
+.reasoning {
+    background-color: #0464e0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.contact-form {
+   display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    justify-content: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    width: fit-content;
+    gap: 10px;
+}
+
+.large-btn#unique {
+    background-color: #28a745;
+}
+
+
+.about-section {
+    color: white;
+}
+
+.reasoning {
+    color: white;
+}
+
+.services-offered {
+    color: white;
+}
+
+.support-services {
+   background-color: #0464e0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    color: white;
+}
+
+
+.support-services a  {
+    color: yellow;
+}
+.support-services a:hover {
+    color: orange;
+}
+
+.learn-more {
+     background-color: #0464e0;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.learn-more button {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.about-section, .mission, .services-offered, .why-choose-us {
+    margin-bottom: 60px;
+}
+
+#errorMsg {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.popup {
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}   
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 400px;
+    text-align: center;
+}
+
+
+  .close {
+    color: #fa0404;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0cqw;
+}
