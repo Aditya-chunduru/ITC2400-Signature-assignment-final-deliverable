@@ -6,7 +6,6 @@
     <title>CONTACT US</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-
 </head>
 <body>
 
@@ -16,7 +15,12 @@
 
 
     <nav>
-        <button onclick="location.href='index.html'" class="large-btn">HOME</button>
+        <a href='index.html' class="large-btn">HOME</a>
+         <a href='browse.html' class="large-btn">BROWSE GAMES</a>
+        <a href='roadmaps.html'class="large-btn">START CREATING ROADMAPS!</a>
+         <a href='community.html' class="large-btn">COMMUNITY</a>
+          <a href='about.html' class="large-btn">ABOUT US</a>
+           <a href='contact.html' class="large-btn">CONTACT US</a>
     </nav>
 
     <main>
@@ -42,11 +46,15 @@
 
         <button type="submit" class="large-btn" id="unique">Submit</button>
     </form>
+
+
     <div id="errorPopup" class="popup">
         <div class="popup-content">
         <span class="close" id="closePopup">&times;</span>
         <p id="popupMsg"></p>
     </div>
+    </div>
+
     </main>
 </body>
 </html>
